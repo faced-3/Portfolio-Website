@@ -15,14 +15,16 @@
 <body>
     <header>
         <!--begin van navagatie balk in de top-->
+
         <nav>
             <ul>
                 <li><a href="#web">portfolio website</a></li>
                 <li><a class="active" href="index.html">home</a></li>
-                <li><a href="#about">about me</a></li>
+                <li><a href="aboutme.html">about me</a></li>
                 <li><a href="contact.html">work experions</a></li>
             </ul>
         </nav>
+
 
         <div class="login-button"> <!--geen border radias-->
             <h4>login</h4>
@@ -48,16 +50,27 @@
                 <li><a href="school.html">school</a></li>
                 <li><a href="goals.html">goals</a></li>
             </ul>
-            <div class="popup" id="popuplinkFam">
-                <div id="cross">X</div>
+           
+
+            <div class="popup" id="popupfam">
+                <div class="cross" id="popupLink">
+                    X
+                </div>
             </div>
-            <div class="popuplink" id="popuplinkHob">
-                <div id="cross">X</div>
+            <div class="popup" id="popuphob">
+                <div class="cross" id="popupLink">
+                    X
+                </div>
+            </div>
+            <div class="popup" id="popupplace">
+                <div class="cross" id="popupLink">
+                    X
+                </div>
             </div>
             <ul>
                 <li id="popuplinkFam">famely</li>
                 <li id="popuplinkHob">hobbys</li>
-                <li><a href="place">live place</a></li>
+                <li id="popuplinkPlace">live place</li>
             </ul>
         
         </section>
@@ -71,17 +84,41 @@
 </html>
 <script>
 
-    const cross = document.getElementById('cross');
+    const cross = document.getElementById('popupLink');
 
     const popuplinkFam = document.getElementById('popuplinkFam');
     const popuplinkHob = document.getElementById('popuplinkHob');
+    const popuplinkPlace = document.getElementById('popuplinkPlace');
+
+    //popupHob
+    popuplinkHob.addEventListener('click', function(event) {
+        document.getElementById('popuphob').style.display = 'inline-block';
+        document.getElementById('popupfam').style.display = 'none';
+        document.getElementById('popupplace').style.display = 'none';
+
+
+    });
+
+    //popupFam
     popuplinkFam.addEventListener('click', function(event) {
-       popup.style.display = 'inline-block';
+        document.getElementById('popupfam').style.display = 'inline-block';
+        document.getElementById('popuphob').style.display = 'none';
+        document.getElementById('popupplace').style.display = 'none';
+
+    }); 
+    
+    //popupFam
+    popuplinkPlace.addEventListener('click', function(event) {
+        document.getElementById('popupplace').style.display = 'inline-block';
+        document.getElementById('popuphob').style.display = 'none';
+        document.getElementById('popupfam').style.display = 'none';
+
     });
-    popuplink.addEventListener('click', function(event) {
-       popuplinkHob.style.display = 'inline-block';
-    });
+
+
+   // afsluiten met kruis
     cross.addEventListener('click', function(event) {
-       popup.style.display = 'none';
+     cross.style.display = 'none';
+        
     });
 </script>

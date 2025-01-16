@@ -26,7 +26,7 @@
         <nav class="back"> <!--geen border radias-->
             <ul>
 
-                <li><a href="abautme.html">school</a></li>
+                <li><a href="aboutme.html">school</a></li>
             </ul>
 
         </nav>
@@ -45,14 +45,22 @@
 
             <ul>
 
-                <li><a href="plaats.html">plaats</a></li>
-                <li><a href="keuze.html">keuze</a></li>
-                <li><a href="vakken.html">vakken</a></li>
+                <li id="popuplinkPlaats">plaats</li>
+                <li id="popuplinkChose">keuze</li>
+                <li id="popuplinkVak">vakken</li>
             </ul>
+            <div class="popup" id="popupplaats">x</div>
+            <div class="popup" id="popupchose">c</div>
+            <div class="popup" id="popupvak">v</div>
+            <div class="popup" id="popupvonk">a</div>
+            <div class="popup" id="popupcita">b</div>
+            <div class="popup" id="popuproc">i</div>
+
+
             <ul>
-                <li><a href="#vonkel.html">vonkel morgen</a></li>
-                <li><a href="#citadel.html">citadel college</a></li>
-                <li><a href="#roc.html">ROC nijmegen</a></li>
+                <li id="popuplinkVonk">vonkel morgen</li>
+                <li id="popuplinkCita">citadel college</li>
+                <li id="popuplinkRoc">ROC nijmegen</li>
             </ul>
 
         </section>
@@ -64,3 +72,78 @@
 </body>
 
 </html>
+<script>
+
+    const cross = document.getElementById('cross');
+
+    const popuplinkPlaats = document.getElementById('popuplinkPlaats');
+    const popuplinkChose = document.getElementById('popuplinkChose');
+    const popuplinkVak = document.getElementById('popuplinkVak');
+    const popuplinkVonk = document.getElementById('popuplinkVonk');
+    const popuplinkCita = document.getElementById('popuplinkCita');
+    const popuplinkRoc = document.getElementById('popuplinkRoc');
+
+    //popupHob
+    popuplinkPlaats.addEventListener('click', function(event) {
+        document.getElementById('popupplaats').style.display = 'inline-block';
+        document.getElementById('popupchose').style.display = 'none';
+        document.getElementById('popupvak').style.display = 'none';
+        document.getElementById('popupvonk').style.display = 'none';
+        document.getElementById('popupcita').style.display = 'none';
+        document.getElementById('popuproc').style.display = 'none';
+
+    });
+
+    //popupFam
+    popuplinkChose.addEventListener('click', function(event) {
+        document.getElementById('popupchose').style.display = 'inline-block';
+        document.getElementById('popupplaats').style.display = 'none';
+        document.getElementById('popupvak').style.display = 'none';
+        document.getElementById('popupvonk').style.display = 'none';
+        document.getElementById('popupcita').style.display = 'none';
+        document.getElementById('popuproc').style.display = 'none';
+    }); 
+    
+    //popupFam
+    popuplinkVak.addEventListener('click', function(event) {
+        document.getElementById('popupvak').style.display = 'inline-block';
+        document.getElementById('popupchose').style.display = 'none';
+        document.getElementById('popupplaats').style.display = 'none';
+        document.getElementById('popupvonk').style.display = 'none';
+        document.getElementById('popupcita').style.display = 'none';
+        document.getElementById('popuproc').style.display = 'none';
+    });
+
+    popuplinkVonk.addEventListener('click', function(event) {
+        document.getElementById('popupvonk').style.display = 'inline-block';
+        document.getElementById('popupchose').style.display = 'none';
+        document.getElementById('popupplaats').style.display = 'none';
+        document.getElementById('popupvak').style.display = 'none';
+        document.getElementById('popupcita').style.display = 'none';
+        document.getElementById('popuproc').style.display = 'none';
+    });
+    
+    popuplinkCita.addEventListener('click', function(event) {
+        document.getElementById('popupcita').style.display = 'inline-block';
+        document.getElementById('popupchose').style.display = 'none';
+        document.getElementById('popupplaats').style.display = 'none';
+        document.getElementById('popupvonk').style.display = 'none';
+        document.getElementById('popupvak').style.display = 'none';
+        document.getElementById('popuproc').style.display = 'none';
+    });
+    
+    popuplinkRoc.addEventListener('click', function(event) {
+        document.getElementById('popuproc').style.display = 'inline-block';
+        document.getElementById('popupchose').style.display = 'none';
+        document.getElementById('popupplaats').style.display = 'none';
+        document.getElementById('popupvonk').style.display = 'none';
+        document.getElementById('popupcita').style.display = 'none';
+        document.getElementById('popupchose').style.display = 'none';
+    });
+
+
+    //afsluiten met kruis
+    cross.addEventListener('click', function(event) {
+     popup.style.display = 'none';
+    });
+</script>

@@ -73,13 +73,7 @@ aside div {
   width: 3%;
   background-color: #139A43;
 }
-.popup{
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: none;
-  
-}
+
 .popuplink{
   width: 100px;
   height: 100px;
@@ -154,4 +148,30 @@ aside div {
 .options ul li  {  
   list-style: none;
   margin: 10px;
+}
+
+.popup{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: none;
+  
+}
+
+.options li{
+  text-decoration: underline;
+  text-decoration-color:#139A43;
+  color: #F1F2F5;  
+}
+#popuphob{
+  background-color: blue;
+}
+#popupfam{
+  background-color: red;
+}
+#popupplace{
+  background-color: green;
+}
+#options{
+  background-color: green;
 }
