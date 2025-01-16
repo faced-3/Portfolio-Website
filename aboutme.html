@@ -26,9 +26,6 @@
         </nav>
 
 
-        <div class="login-button"> <!--geen border radias-->
-            <h4>login</h4>
-        </div>
 
 
         <!--einde van navagatie balk in de top-->
@@ -36,44 +33,76 @@
     <main>
         <aside>
             <div></div>
-            <img src="img/insta.png" alt="instagram" width="40%" height="10%">
-            <img src="img/snap.png" alt="snapchat" width="40%" height="10%">
+            <img src="img/github.png" alt="instagram" width="40%" height="10%" >
+            <img src="img/linkin.png" alt="snapchat" width="40%" height="10%">
             <div></div>
         </aside>
-       
 
         <section class="options">
-    
+<h3>
             <ul>
-                
-                <li><a href="abautme.html">my life</a></li>
-                <li><a href="school.html">school</a></li>
-                <li><a href="goals.html">goals</a></li>
-            </ul>
-           
 
-            <div class="popup" id="popupfam">
-                <div class="cross" id="popupLink">
-                    X
-                </div>
-            </div>
-            <div class="popup" id="popuphob">
-                <div class="cross" id="popupLink">
-                    X
-                </div>
-            </div>
-            <div class="popup" id="popupplace">
-                <div class="cross" id="popupLink">
-                    X
-                </div>
-            </div>
-            <ul>
-                <li id="popuplinkFam">famely</li>
-                <li id="popuplinkHob">hobbys</li>
-                <li id="popuplinkPlace">live place</li>
+                <li id="popuplinkFam" >my life</li>
+                
+                <li id="popuplinkPlace">goals</li>
             </ul>
-        
+        </h3>
         </section>
+        <section class="blocks">
+            
+                <div id="popuphi" class="hi">
+                    Mijn sterke punten zijn:
+                    <br><br>
+•	Overleggen: Ik bevorder open communicatie en zorg ervoor dat elke stem gehoord wordt, wat leidt tot betere besluitvorming.
+<br><br>
+•	Mee denken: Ik luister actief en bied waardevolle inzichten, waardoor we samen effectieve oplossingen kunnen vinden.
+<br><br>
+•	Inleven: Door me in anderen te verplaatsen, bouw ik sterke relaties op en creëer ik een positieve werkomgeving.
+<br><br>
+Deze kwaliteiten stellen mij in staat om effectief bij te dragen aan teamdoelen.
+
+                </div>
+                <div id="popupi" class="i">Algemeen<br><br>
+                    Ik ben 16 jaar oud<br><br>
+                    en volg een opleiding in software development aan het ROC Nijmegen.<br>
+                    Met een passie voor technologie en programmeren geniet ik ervan om creatieve oplossingen te bedenken voor uiteenlopende vraagstukken.<br><br>
+                    Mijn opleiding biedt me de kans om mijn vaardigheden verder te ontwikkelen en praktische ervaring op te doen in de wereld van softwareontwikkeling.<br><br>
+                    Ik kijk ernaar uit om mijn kennis uit te breiden
+                    en bij te dragen aan interessante projecten in de toekomst.
+                    </div>
+                <div id="popupl" class="l">Werkvaardigheden<br>
+                    <br>
+                    Mijn werkvaardigheden zijn:<br><br>
+                    •	Goed overleggen: Ik communiceer open en effectief met teamleden.<br><br>
+                    •	Met structuur werken: Ik organiseer mijn taken en projecten op een gestructureerde manier.<br><br>
+                    •	Effectief werken: Ik focus op resultaten en streef naar efficiëntie in mijn werkprocessen.<br><br>
+                    •	Met beleid werken: Ik neem weloverwogen beslissingen en handel doordacht in mijn aanpak.<br><br>
+                    Deze vaardigheden helpen me om succesvol te functioneren in een samenwerkingsomgeving.<br><br>
+                    </div>
+
+            
+
+                <div id="goals" class="hi">Ambities<br><br>
+                    Mijn grootste ambitie is om mijn opleiding software development succesvol af te ronden.<br> Dit vak boeit me enorm en ik ben gemotiveerd om veel te leren.<br><br>
+                    Ik wil mijn technische vaardigheden, probleemoplossend vermogen en creativiteit verbeteren, en mijn kennis in de praktijk toepassen in innovatieve projecten.<br><br>
+                    Uiteindelijk streef ik ernaar om een waardevolle bijdrage te leveren aan softwareontwikkeling en mijn passie om te zetten in een succesvolle carrière.
+                    </div>
+                <div id="goals2" class="i">Ambities<br><br>
+                    Mijn grootste ambitie is om mijn opleiding software development af te ronden en daarna naar het hbo te gaan.<br><br>
+                    Ik vind het vak erg leuk en interessant en wil mijn kennis verder uitbreiden. Het hbo biedt de kans om dieper in te gaan op complexe systemen en technologieën.<br><br>
+                    Ik wil goed voorbereid de arbeidsmarkt betreden en mijn passie voor technologie omzetten in een succesvolle carrière in software development.
+                    </div>
+                <div id="goals3" class="l">Een van mijn ambities is om mijn eigen software development bedrijf te starten. Ik ben nog aan het nadenken over welke diensten ik wil aanbieden, of het nu gaat om het ontwikkelen van websites of programma's.<br><br>
+                    Het idee om mijn eigen bedrijf te runnen en creatieve oplossingen te bieden in de technologie fascineert me enorm. Ik wil graag unieke softwareproducten ontwikkelen die aan de behoeften van klanten voldoen.<br><br>
+                    Deze onderneming biedt de kans om mijn passie voor softwareontwikkeling en ondernemerschap te combineren, en ik kijk ernaar uit om mijn ideeën in de toekomst werkelijkheid te maken.
+                    
+                    </div>
+            
+            
+            
+
+        </section>
+
 
     </main>
     <footer>
@@ -84,41 +113,37 @@
 </html>
 <script>
 
-    const cross = document.getElementById('popupLink');
+
 
     const popuplinkFam = document.getElementById('popuplinkFam');
-    const popuplinkHob = document.getElementById('popuplinkHob');
     const popuplinkPlace = document.getElementById('popuplinkPlace');
 
     //popupHob
-    popuplinkHob.addEventListener('click', function(event) {
-        document.getElementById('popuphob').style.display = 'inline-block';
-        document.getElementById('popupfam').style.display = 'none';
-        document.getElementById('popupplace').style.display = 'none';
-
-
-    });
+  
 
     //popupFam
-    popuplinkFam.addEventListener('click', function(event) {
-        document.getElementById('popupfam').style.display = 'inline-block';
-        document.getElementById('popuphob').style.display = 'none';
-        document.getElementById('popupplace').style.display = 'none';
+    popuplinkFam.addEventListener('click', function (event) {
+        document.getElementById('popuphi').style.display = 'inline-block';
+        document.getElementById('popupi').style.display = 'inline-block';
+        document.getElementById('popupl').style.display = 'inline-block';
 
-    }); 
-    
-    //popupFam
-    popuplinkPlace.addEventListener('click', function(event) {
-        document.getElementById('popupplace').style.display = 'inline-block';
-        document.getElementById('popuphob').style.display = 'none';
-        document.getElementById('popupfam').style.display = 'none';
-
-    });
-
-
-   // afsluiten met kruis
-    cross.addEventListener('click', function(event) {
-     cross.style.display = 'none';
         
+        document.getElementById('goals').style.display = 'none';
+        document.getElementById('goals2').style.display = 'none';
+        document.getElementById('goals3').style.display = 'none';
     });
+
+    //popupFam
+    popuplinkPlace.addEventListener('click', function (event) {
+        document.getElementById('goals').style.display = 'inline-block';
+        document.getElementById('goals2').style.display = 'inline-block';
+        document.getElementById('goals3').style.display = 'inline-block';
+        document.getElementById('popuphi').style.display = 'none';
+        document.getElementById('popupi').style.display = 'none';
+        document.getElementById('popupl').style.display = 'none';
+        
+
+    });
+
+
 </script>
