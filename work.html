@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<!--einde heade-->
+
+<body>
+
+    <header>
+       
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="aboutme.html">about me</a></li>
+                <li><a href="work.html">work experions</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+
+
+
+    </header>
+    <!--einde van navagatie balk in de top-->
+
+    <main>
+        <aside>
+            <div></div>
+            <a href="https://github.com/dashboard"><img src="img/github.png" alt="instagram" width="50"
+                    height="50"></a>
+            <a href="https://www.linkedin.com/mynetwork/grow/?skipRedirect=true"><img src="img/linkin.png"
+                    alt="snapchat" width="50" height="50"></a>
+            <div></div>
+        </aside>
+
+
+        <!--einde van baisis dingen-->
+
+
+        
+
+        <section class="place">
+            <section class="werk">
+                <ul>
+                    <li onclick="makeActive('popuplinkAppie')" id="popuplinkAppie">albert heijn</li>
+                    <li onclick="makeActive('popuplinkKast')" id="popuplinkKast">planten kast</li>
+                    <li onclick="makeActive('popuplinkWijk')" id="popuplinkWijk">kranten wijk</li>
+                    <li onclick="makeActive('popuplinkHoreca')" id="popuplinkHoreca">horeca</li>
+                </ul>
+
+            </section>
+            <section class="werkblock">
+                <div id="appie" class="albertheijn">
+
+
+                    <h1>ALEBERT HIJN FUNCTIES</h1>
+
+                    <div class="werkfuncties">
+                        <section class="kassamedewerker">
+                            <h2>KASSA MEDEWERKER</h2>
+                            <img src="img/kassa.jpg" alt="kassa medewerker" height="100" width="100">
+                            <div>
+                                Ik heb een half jaar gewerkt als kassamedewerker bij Albert Heijn.<br> Tijdens deze
+                                periode heb ik veel producten gescand.<br> Ik geleerd hoe ik beter met klanten kan
+                                omgaan.
+                            </div>
+                        </section>
+
+                        <section class="vakkenvuller">
+                            <h2>VAKKEN VULLER</h2>
+                            <img src="img/vakkenvullen.jpg" alt="vakken vuller" height="100" width="100">
+
+                            <div>
+                                Ik heb een half jaar gewerkt als kassamedewerker bij Albert Heijn.<br> Tijdens deze
+                                periode heb ik veel producten gescand.<br> Ik geleerd hoe ik beter met klanten kan
+                                omgaan.
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+
+                <div id="kast" class="plantenkast">
+
+                    <div class="work-container">
+                        <h1>Planten kast</h1>
+                        <div class="imgplacingwork">
+                            <img src="img/willemsenwijs.png" alt="willemsenwijs" height="150" width="150">
+                            <img src="img/flapjack.jpg" alt="flapjack" height="150" width="150">
+                        </div>
+
+
+                        <div class="worktext">
+                            Ik begon te werken bij Willemsen Wijs toen ik zestien jaar oud was. Sindsdien werk
+                            ik er nu
+                            een half jaar en mijn voornaamste taak is om met planten te werken en deze in karren
+                            te
+                            zetten.
+                        </div>
+                    </div>
+
+                </div>
+                <div id="wijk" class="krantenwijk">
+                    <div class="work-container">
+                        <h1>Kranten wijk</h1>
+                        <img src="img/gemeente.png" alt="gemeente nieuws">
+                        <div class="worktext">Ik begon op 13-jarige leeftijd met werken bij het gemeentelijk
+                            nieuws.
+                            Gedurende drie jaar was ik bezorger. Op 16-jarige leeftijd ben ik gestopt met het
+                            bezorgen van
+                            kranten.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="horeca" class="povidencia">
+
+                    <div class="work-container">
+                        <h1>horeca</h1>
+                        <div class="imgplacingwork">
+                            <img src="img/provi.jpg" alt="provi" height="100" width="150">
+                            <img src="img/horeca.png" alt="horec" height="100" width="150">
+                        </div>
+                        <div class="worktext">
+                            Toen ik 15 jaar oud was, werkte ik in de horeca tijdens carnaval. Ik was
+                            verantwoordelijk voor
+                            het werk achter de bar.
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            </section>
+    </main>
+    
+   
+
+    <script>
+  //javascript
+        function makeActive(id) {
+            const elementen = ['popuplinkAppie', 'popuplinkKast', 'popuplinkWijk', 'popuplinkHoreca'];
+    
+            elementen.forEach(el => {
+                document.getElementById(el).classList.toggle('active', el === id);
+            });
+        }
+    
+        const popuplinkAppie = document.getElementById('popuplinkAppie');
+        const popuplinkKast = document.getElementById('popuplinkKast');
+        const popuplinkWijk = document.getElementById('popuplinkWijk');
+        const popuplinkHoreca = document.getElementById('popuplinkHoreca');
+      
+    
+    
+     
+        popuplinkAppie.addEventListener('click', function (event) {
+    
+            document.getElementById('appie').style.display = 'inline-block';
+            document.getElementById('kast').style.display = 'none';
+            document.getElementById('wijk').style.display = 'none';
+            document.getElementById('horeca').style.display = 'none';
+        });
+    
+     
+        popuplinkKast.addEventListener('click', function (event) {
+            document.getElementById('kast').style.display = 'inline-block';
+            document.getElementById('wijk').style.display = 'none';
+            document.getElementById('appie').style.display = 'none';
+            document.getElementById('horeca').style.display = 'none';
+    
+    
+        });
+        popuplinkWijk.addEventListener('click', function (event) {
+            document.getElementById('wijk').style.display = 'inline-block';
+            document.getElementById('horeca').style.display = 'none';
+            document.getElementById('kast').style.display = 'none';
+            document.getElementById('appie').style.display = 'none';
+        });
+    
+        
+        popuplinkHoreca.addEventListener('click', function (event) {
+            document.getElementById('horeca').style.display = 'inline-block';
+            document.getElementById('kast').style.display = 'none';
+            document.getElementById('appie').style.display = 'none';
+            document.getElementById('wijk').style.display = 'none';
+    
+    
+        });
+    
+    </script>
+</body>
+
+</html>

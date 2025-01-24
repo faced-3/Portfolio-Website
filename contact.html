@@ -19,10 +19,10 @@
 
         <nav>
             <ul>
-                <li><a href="#web">portfolio website</a></li>
-                <li><a class="active" href="index.html">home</a></li>
+                <li><a href="index.html">home</a></li>
                 <li><a href="aboutme.html">about me</a></li>
-                <li><a href="contact.html">work experions</a></li>
+                <li><a href="work.html">work experions</a></li>
+                <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
 
@@ -31,148 +31,39 @@
 
         <!--einde van navagatie balk in de top-->
     </header>
-    <main>
+    <main> <!--main kijken-->
         <aside>
             <div></div>
-            <a href=""><img src="img/github.png" alt="instagram" width="40%" height="10%"></a>
-            <img src="img/linkin.png" alt="snapchat" width="40%" height="10%">
+            <a href="https://github.com/dashboard"><img src="img/github.png" alt="instagram" width="50"
+                    height="50"></a>
+            <a href="https://www.linkedin.com/mynetwork/grow/?skipRedirect=true"><img src="img/linkin.png"
+                    alt="snapchat" width="50" height="50"></a>
             <div></div>
         </aside>
 
 
         <!--einde van baisis dingen-->
 
-        </header>
+       
         <!--begin van media gedeelte met email en telegram-->
-        <main>
-            <section class="place">
-                <section class="werk">
-                    <ul>
-                        <li id="popuplinkAppie">albert heijn</li>
-                        <li id="popuplinkKast">planten kast</li>
-                        <li id="popuplinkWijk">kranten wijk</li>
+      
+            <section class="contact">
+                <div  class="contactbox">
 
-                        <li id="popuplinkHoreca">horeca</li>
-                    </ul>
+                <h1 class="contactsend">Contact ons</h1>
+            
+                <form action="nb.php" method="post">
+                    <input type="text" name="email" id="email" class="email2" placeholder="your email">
+                    <input type="text" name="name" id="mame" placeholder="your name" class="youname">
+                    <textarea name="message" id="message" placeholder="your message" class="yourmessage1">  your message
+                    </textarea> 
 
-                </section>
-                <section class="werkblock">
-                    <div id="appie" class="ja">
-                        <div class="albert">
-                            <br><br>
-                            <h1>ALEBERT HIJN FUNCTIES</h1>
-                            <br><br>
-                            <p>
-                            <div>
-                                <h2>KASSA MEDEWERKER</h2>
-                                <h3>VAKKEN VULLER</h3>
-                            </div>
-                            <br><br>
-                            <div>
-                                <img src="img/kassa.jpg" alt="kassa medewerker" height="100px" width="100px">
-                                <img src="img/vakken vullen.jpg" alt="vakken vuller" height="100px" width="100px">
+                    <input class="sendcontact" type="submit" value="Send">
+                </form>
 
-                            </div>
-                            <br><br>
-                            <div>
-                                <div>
-                                    Ik heb een half jaar gewerkt als kassamedewerker bij Albert Heijn.<br> Tijdens deze
-                                    periode heb ik veel producten gescand.<br> Ik geleerd hoe ik beter met klanten kan
-                                    omgaan.
-                                </div>
-                                <div>
-                                    Ik heb een jaar gewerkt als vakkenvuller bij Albert Heijn.<br> In deze rol hielp ik
-                                    veel
-                                    klanten met hun vragen.<br> Ik leerde hier hoe ik efficiënt en georganiseerd kon
-                                    werken,<br>
-                                    zodat ik mijn taken binnen de gestelde tijd kon afronden. </div>
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-                   
-                    <div id="kast" class="ja2">
-                        <div class="testspace">
-                            <div>
-                                <img src="img/willemsenwijs.png" alt="willemsenwijs" height="50%" width="150px">
-                                <img src="img/flapjack.jpg" alt="flapjack" height="50%  " width="150px">
-                            </div>
-                            <div class="tester-container">
-                                
-                                    <h1>Planten kast</h1>
-                               
-                                <div class="tester">
-                                    Ik begon te werken bij Willemsen Wijs toen ik zestien jaar oud was. Sindsdien werk
-                                    ik er nu
-                                    een half jaar en mijn voornaamste taak is om met planten te werken en deze in karren
-                                    te
-                                    zetten.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="wijk" class="ja3">Ik begon op 13-jarige leeftijd met werken bij het gemeentelijk nieuws.
-                        Gedurende drie jaar was ik bezorger. Op 16-jarige leeftijd ben ik gestopt met het bezorgen van
-                        kranten.
-                        <img src="img/gemeente.png" alt="gemeente nieuws">
-                    </div>
-
-                    <div id="horeca" class="ja4"><img src="img/provi.jpg" alt="provi">
-                        Toen ik 15 jaar oud was, werkte ik in de horeca tijdens carnaval. Ik was verantwoordelijk voor
-                        het werk achter de bar.</div>
-                </section>
+            </div>
             </section>
         </main>
-        <!-- einde van gegevens-->
-        <!--outro footer-->
-
 </body>
 
 </html>
-<script>
-
-
-
-    const popuplinkAppie = document.getElementById('popuplinkAppie');
-    const popuplinkKast = document.getElementById('popuplinkKast');
-    const popuplinkWijk = document.getElementById('popuplinkWijk');
-    const popuplinkHoreca = document.getElementById('popuplinkHoreca');
-    //popupHob
-
-
-    //popupFam
-    popuplinkAppie.addEventListener('click', function (event) {
-
-        document.getElementById('appie').style.display = 'inline-block';
-        document.getElementById('kast').style.display = 'none';
-        document.getElementById('wijk').style.display = 'none';
-        document.getElementById('horeca').style.display = 'none';
-    });
-
-    //popupFam
-    popuplinkKast.addEventListener('click', function (event) {
-        document.getElementById('kast').style.display = 'inline-block';
-        document.getElementById('wijk').style.display = 'none';
-        document.getElementById('appie').style.display = 'none';
-        document.getElementById('horeca').style.display = 'none';
-
-
-    });
-    popuplinkWijk.addEventListener('click', function (event) {
-        document.getElementById('wijk').style.display = 'inline-block';
-        document.getElementById('horeca').style.display = 'none';
-        document.getElementById('kast').style.display = 'none';
-        document.getElementById('appie').style.display = 'none';
-    });
-
-    //popupFam
-    popuplinkHoreca.addEventListener('click', function (event) {
-        document.getElementById('horeca').style.display = 'inline-block';
-        document.getElementById('kast').style.display = 'none';
-        document.getElementById('appie').style.display = 'none';
-        document.getElementById('wijk').style.display = 'none';
-
-
-    });
-
-</script>
