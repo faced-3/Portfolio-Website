@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style/style.css">
 
 </head>
-<!--einde header-->
+<!--einde head-->
 
 <body>
     <header>
@@ -19,10 +19,10 @@
 
         <nav>
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="aboutme.html">about me</a></li>
-                <li><a href="work.html">work experions</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="work.html">Work experions</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -31,39 +31,54 @@
 
         <!--einde van navagatie balk in de top-->
     </header>
-    <main> <!--main kijken-->
+    <main> <!--begin main-->
         <aside>
             <div></div>
-            <a href="https://github.com/dashboard"><img src="img/github.png" alt="instagram" width="50"
-                    height="50"></a>
+            <a href="https://github.com/dashboard"><img src="img/github.png" alt="instagram" width="50" height="50"></a>
             <a href="https://www.linkedin.com/mynetwork/grow/?skipRedirect=true"><img src="img/linkin.png"
                     alt="snapchat" width="50" height="50"></a>
             <div></div>
         </aside>
 
 
-        <!--einde van baisis dingen-->
-
        
-        <!--begin van media gedeelte met email en telegram-->
-      
-            <section class="contact">
-                <div  class="contactbox">
 
-                <h1 class="contactsend">Contact ons</h1>
-            
-                <form action="nb.php" method="post">
-                    <input type="text" name="email" id="email" class="email2" placeholder="your email">
-                    <input type="text" name="name" id="mame" placeholder="your name" class="youname">
-                    <textarea name="message" id="message" placeholder="your message" class="yourmessage1">  your message
-                    </textarea> 
 
-                    <input class="sendcontact" type="submit" value="Send">
-                </form>
+        <!--begin contact formulier-->
+
+        <section class="contact">
+            <div class="contactbox">
+                <div class="parentContainer">
+                    <div class="container">
+
+                        <input type="text" name="email" id="email" class="contactboxInput" placeholder="Your email">
+                        <input type="text" name="name" id="mame" placeholder="Your name" class="contactboxInput">
+                        <textarea name="message" id="message" placeholder="Your message" class="yourmessage1">  Your message
+    </textarea>
+
+
+
+                    </div>
+
+                    <div class="container">
+                        <div class="contactboxInput">
+                            <h1 class="schoolemail">1211999@student.roc-nijmegen.nl</h1>
+                        </div>
+                        <div class="contactboxInput">
+                            <h1 class="eigenemail">kleineduuf@gmail.com</h1>
+
+                        </div>
+                        <form action="nb.php" method="post">
+                            <input class="sendcontact" type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+
+
 
             </div>
-            </section>
-        </main>
+        </section>
+    </main>
 </body>
 
 </html>
